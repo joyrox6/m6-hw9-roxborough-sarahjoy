@@ -1,0 +1,14 @@
+/* ********************** START 320PX MEDIA QUERY ********************** */
+
+@media (min-width: 320px) {
+    body {
+
+        display: flex;
+        text-align: center;
+        background-image: linear-gradient(to right, violet, gray);
+        width: 100%;
+        
+    }
+}
+
+/* ********************** END 320PX MEDIA QUERY ********************** */
