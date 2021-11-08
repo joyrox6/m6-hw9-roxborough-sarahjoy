@@ -16,3 +16,33 @@ btn.onclick = function() {
 //.catch(function(err) {
 //    console.log(err)
 // })
+
+.catch(displayLocNotFound)
+
+// reset form field
+inputEl.value = ""
+
+// ********************* }
+
+// call the OpenWeather API and return weather information
+function getWeather(query) {
+    // place default to USA
+    if(!query.includes(",")) query += ',us'
+    // return fetch call
+    // call function
+    return fetch(
+        'api.openweathermap.org/data/2.5/weather?q=' +
+        query +
+        ''
+    )
+
+    .then(function(res) {
+        return res.json()
+    })
+    .then(function(data) {
+        // location not found
+        if (data.cod === "404") throw new Error('location not found')
+        // place weather icon URL
+        
+    }
+}
