@@ -43,6 +43,8 @@ function getWeather(query) {
         // location not found
         if (data.cod === "404") throw new Error('location not found')
         // place weather icon URL
-        
+
     }
+
+    
 }
