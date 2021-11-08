@@ -4,7 +4,7 @@ var forecastEl = document.getElementById('forecast')
 
 btn.onclick = function() {
     // console.log('clicked')
-    fetch('api.openweathermap.org/data/2.5/weather?q=YOURQUERY&units=imperial&appid=1f4b4a7690d5fdbf1db1b7cd9f01fdcb') // make the request
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=YOURQUERY&units=imperial&appid=1f4b4a7690d5fdbf1db1b7cd9f01fdcb') // make the request
     .then(function(res) {
         return res.json() // when the request is received, convert to json
     })
